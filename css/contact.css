@@ -1,0 +1,56 @@
+.contact_form textarea, .contact_form select, .contact_form input {
+    border: 1px solid grey;
+    box-shadow: 0px 0px 3px grey, 0px 10px 15px grey inset;
+    border-radius: 5px;
+    padding: 5px;
+    -webkit-transition: padding 1.2s; 
+    transition: padding 1.2s;
+}
+
+.contact_form textarea:focus, .contact_form select:focus, .contact_form input:focus {
+    background: grey;
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px grey;
+    padding: 30px;
+}
+
+.contact_form input:required, .contact_form textarea:required, contact_form select:required {
+    background: white url('../images/red_asterisk.png') no-repeat 98% center;
+}
+
+.contact_form input:valid, .contact_form textarea:valid, contact_form select:valid {
+    background: white url('../images/valid.png') no-repeat 98% center;
+}
+
+.contact_form input:focus + .form_hint {
+    display:inline;
+}
+
+.contact_form input:required:valid + .form_hint {
+    background:green;
+    display:none;
+}
+
+.contact_form input {
+    width: 200px;
+}
+
+.form_hint {
+    font-size: 12px;
+    color: white;
+    border-radius: 2px;
+    background: red;
+    margin-left: 8px;
+    padding: 2px;
+    position: absolute;
+    display: none;
+}
+
+.form_hint:before {
+    content:"\25C0";
+    color:red;
+    position: absolute;
+    top: 5px;
+    left: -11px;
+}
+

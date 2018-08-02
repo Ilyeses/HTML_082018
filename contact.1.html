@@ -15,7 +15,6 @@
     <!-- links to external css styles to be included for this website or web page-->
     <link rel="stylesheet" href="./css/main.css" type="text/css">
     <link rel="stylesheet" href="./css/form.css" type="text/css">
-    <link rel="stylesheet" href="./css/contact.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
 </head>
@@ -50,62 +49,45 @@
         </div>
 
         <div class="column1 containermiddle">
-            <form class="contact_form" action="#" method="POST">
+            <form action="#" method="POST">
                 <div>
-                    <div>
-                        <i class="fas fa-user-alt"></i>
-                        <label class="formlabel" for="fname">First name</label>
-                        <input type="text" id="fname" class="formcss" name="firstname" placeholder="Your first name..." required autofocus>
-                        <span class="form_hint">Firstname is required*</span>
-                        <br>
-                    </div>
-                    <div>
-                        <i class="fas fa-user-alt"></i>
-                        <label class="formlabel" for="lname">Last name</label>
-                        <input type="text" id="lname" class="formcss" name="lastname" placeholder="Your last name..." required>
-                        <span class="form_hint">Lastname is required*</span>
-                        <br>
-                    </div>
-                    <div>
-                        <i class="fas fa-envelope-square"></i>
-                        <label class="formlabel" for="email">Email</label>
-                        <input type="email" id="email" class="formcss" name="email" placeholder="Your email..." required>
-                        <span class="form_hint">Email is required*</span>
-                        <br>
-                    </div>
-                    <div>
-                        <i class="fas fa-phone"></i>
-                        <label class="formlabel" for="dob">Date of birth</label>
-                        <input type="date" id="dob" class="formcss" name="dob" placeholder="Your date of birth..."required>
-                        <br>
-                    </div>
-                    <div>
-                        <i class="fas fa-phone"></i>
-                        <label class="formlabel" for="phone">Phone number</label>
-                        <input type="number" id="phone" class="formcss" name="number" placeholder="Your phone number..."required>
-                        <br>
-                    </div>
-                    <div>
-                        <i class="fas fa-globe-asia"></i>
-                        <label class="formlabel" for="country">Country</label>
-                        <select id="country" class="formcss" required>
-                            <option value="sg">Singapore</option>
-                            <option value="uk">United Kingdom of Britain</option>
-                            <option value="us">United States of America</option>
-                        </select>
-                    </div>
+                    <i class="fas fa-user-alt"></i>
+                    <label class="formlabel" for="fname">First name</label>
+                    <input type="text" id="fname" class="formcss" name="firstname" placeholder="Your first name...">
+                    <br>
+                    <i class="fas fa-user-alt"></i>
+                    <label class="formlabel" for="lname">Last name</label>
+                    <input type="text" id="lname" class="formcss" name="lastname" placeholder="Your last name...">
+                    <br>
+                    <i class="fas fa-envelope-square"></i>
+                    <label class="formlabel" for="email">Email</label>
+                    <input type="email" id="email" class="formcss" name="email" placeholder="Your email...">
+                    <br>
+                    <i class="fas fa-phone"></i>
+                    <label class="formlabel" for="dob">Date of birth</label>
+                    <input type="date" id="dob" class="formcss" name="dob" placeholder="Your date of birth...">
+                    <br>
+                    <i class="fas fa-phone"></i>
+                    <label class="formlabel" for="phone">Phone number</label>
+                    <input type="number" id="phone" class="formcss" name="number" placeholder="Your phone number...">
+                    <br>
+                    <i class="fas fa-globe-asia"></i>
+                    <label class="formlabel" for="country">Country</label>
+                    <select id="country" class="formcss">
+                        <option value="sg">Singapore</option>
+                        <option value="uk">United Kingdom of Britain</option>
+                        <option value="us">United States of America</option>
+                    </select>
                 </div>
                 <br>
                 <div>
                     <i class="fas fa-user-alt"></i>
                     <label class="formlabel" for="description">Description</label>
-                    <textarea id="subject" class="formcss" rows=10 placeholder="Describe yourself..." required></textarea>
+                    <textarea id="subject" class="formcss" rows=10 placeholder="Describe yourself..."></textarea>
                     <br>
                 </div>
                 <div>
-                    <button type="submit" class="formbutton lastdiv">
-                        Submit
-                    </button>
+                    <input type="submit" value="Submit" class="formbutton lastdiv"></input>
                 </div>
             </form>
         </div>
@@ -113,7 +95,7 @@
         <div class="column1 containerright">
             <figure class="image">
                 <img src="./images/Mercedes-Benz-logo-small.png">
-            </figure>
+            </figure>   
         </div>
     </div>
 
